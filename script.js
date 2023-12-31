@@ -1,14 +1,11 @@
-let items = Array.from(document.querySelectorAll('.carousel-item'));
-let activeIndex = 0;
+window.onload = function() {
+    
+    var counter = document.getElementById('volunteerCounter');
 
-document.getElementById('prev').addEventListener('click', () => {
-    items[activeIndex].classList.remove('active');
-    activeIndex = (activeIndex - 1 + items.length) % items.length;
-    items[activeIndex].classList.add('active');
-});
+    
+    counter.textContent = Math.floor(Math.random() * 100) + 1;
 
-document.getElementById('next').addEventListener('click', () => {
-    items[activeIndex].classList.remove('active');
-    activeIndex = (activeIndex + 1) % items.length;
-    items[activeIndex].classList.add('active');
-});
+    
+    setInterval(function() {
+        counter.textContent = parseInt(counter.textContent) + 1;
+    }, 10000); // 
