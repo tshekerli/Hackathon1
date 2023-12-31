@@ -8,4 +8,5 @@ window.onload = function() {
     
     setInterval(function() {
         counter.textContent = parseInt(counter.textContent) + 1;
-    }, 10000); // 
+    }, 10000);
+}
