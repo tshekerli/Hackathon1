@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 :root {
     --background-color: #f5f3fa;
     --headline-color: #7d6d9c;
@@ -17,6 +20,8 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--headline-color);
+    
+    
   }
   
   nav {
@@ -204,4 +209,12 @@ form{
 input{
     width: 200px;
     border-radius: 100px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    margin: 0;
+    padding: 0;
+    width: 400px;
 }
