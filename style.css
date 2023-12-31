@@ -218,3 +218,12 @@ input{
     padding: 0;
     width: 400px;
 }
+
+.about{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  
