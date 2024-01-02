@@ -60,7 +60,6 @@ body {
 
 nav {
   background-color: #3b3450;
-  border-top: 3px solid var(--highlight-color);
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -107,7 +106,7 @@ a {
 }
 
 a:hover {
-  color: var(--highlight-color);
+  color: var(--highlight-color-light);
 }
 
 header {
@@ -115,7 +114,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: var(--background-color);
+  background-color: var(--background-color-light);
 }
 
 .container {
@@ -135,7 +134,7 @@ header {
 }
 
 h2 {
-  color: var(--headline-color);
+  color: var(--headline-color-light);
 }
 
 p {
@@ -143,8 +142,8 @@ p {
 }
 
 button {
-  background-color: var(--button-color);
-  color: var(--button-text-color);
+  background-color: var(--button-color-light);
+  color: var(--button-text-color-light);
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -307,36 +306,11 @@ img {
   background-color: var(--highlight-color-dark);
 }
 
-.theme-dark body {
-  background-color: var(--background-color-dark);
-  color: var(--headline-color-dark);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.theme-dark #themeSwitch {
-  background-color: var(--highlight-color-dark);
-}
-
 .theme-dark nav {
-  background-color: #3b3450; /* Cambia esto a tu color preferido para el tema oscuro */
+  background-color: #3b3450;
   border-top: 3px solid var(--highlight-color-dark);
   color: #ffffff;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-}
-
-.theme-dark .logo {
-  opacity: 0.8;
-  position: relative;
-  top: 2px;
-  margin-left: 5%;
-}
-
-.theme-dark .logo img {
-  border-radius: 50%;
-}
-
-.theme-dark #navUl {
-  color: white;
+  margin: 0;
 }
 
 .theme-dark a {
@@ -351,15 +325,6 @@ img {
   background-color: var(--background-color-dark);
 }
 
-.theme-dark .container img {
-  width: 50%;
-  float: right;
-}
-
-.theme-dark h2 {
-  color: var(--headline-color-dark);
-}
-
 .theme-dark p {
   color: var(--paragraph-color-dark);
 }
@@ -367,80 +332,13 @@ img {
 .theme-dark button {
   background-color: var(--button-color-dark);
   color: var(--button-text-color-dark);
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.theme-dark .containerService {
-  background-color: #5b656e; /* Cambia esto a tu color preferido para el tema oscuro */
-  color: white;
-}
-
-.theme-dark .service-box img {
-  margin-bottom: 10px;
-}
-
-.theme-dark #imgVolunteering {
-  width: 30%;
-}
-
-.theme-dark #imgVolunteer {
-  width: 20%;
-  margin-top: 4%;
-  margin-bottom: 5%;
-}
-
-.theme-dark h6 {
-  color: var(--headline-color-dark);
+.theme-dark .service-box {
+  background-color: var(--background-color-dark);
+  color: var(--main-color-dark);
 }
 
 .theme-dark #serviceUl li {
   color: var(--paragraph-color-dark);
-}
-
-.theme-dark .training-card {
-  background-color: #fff;
-}
-
-.theme-dark .title {
-  color: #333;
-}
-
-.theme-dark .subtitle {
-  color: #777;
-}
-
-.theme-dark .description {
-  color: #555;
-}
-
-.theme-dark .counter {
-  color: #333;
-}
-
-.theme-dark form {
-  width: 400px;
-}
-
-.theme-dark input {
-  border-radius: 100px;
-}
-
-.theme-dark .about {
-  text-align: center;
-}
-
-.theme-dark #form {
-  margin-top: 5%;
-}
-
-.theme-dark .counter-container {
-  margin-top: 5%;
-}
-
-.theme-dark #form {
-  margin-bottom: 5vh;
-}
-
-.theme-dark .submit-button {
-  margin-left: 250px;
 }
