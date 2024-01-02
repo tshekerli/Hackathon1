@@ -15,6 +15,9 @@
 
 <body>
     <nav>
+        <button class="nav-toggle" id="navToggleBtn" aria-label="toggle navigation">
+            <span class="hamburger"> Menu</span>
+        </button>
         <div class="logo">
             <img src="https://media.istockphoto.com/id/1162212464/vector/human-palm-heart-inside-logo-design-vector-donate-symbol-illustration.jpg?s=612x612&w=0&k=20&c=V3Box3MPJcv8CDEuwmARkx9SEI7hU6xJeL5OlKhWjIk="
                 alt="logo" width="50px" height=50px">
@@ -25,10 +28,11 @@
             <li id="navLi"><a href="#services">Services</a></li>
             <li id="navLi"><a href="#training">Training</a></li>
             <li id="navLi"><a href="#About">About Us</a></li>
+            <li id="navLi"><a href="#container-1">Dark Theme</a></li>
         </ul>
     </nav>
     <header id="container-1">
-        <div class="container" >
+        <div class="container">
             <img src="https://img.freepik.com/vector-premium/concepto-gente-usa-aparatos-escena-gente-estilo-dibujos-animados-planos-chica-resuelve-preguntas-importantes-ayuda-telefono-inteligente-mientras-sienta-sofa-ilustracion-vectorial_198565-2278.jpg?w=740"
                 alt="Imagen">
             <div class="content">
@@ -41,7 +45,7 @@
     </header>
     <!-- my idea is to make some benefits, we can work on it -->
     <section id="services">
-        <div class="containerService" >
+        <div class="containerService">
             <div class="service-box">
                 <img src="https://static.thenounproject.com/png/3055860-200.png" alt="Volunteering Opportunities"
                     id="imgVolunteering">
@@ -54,7 +58,7 @@
                     <li>Resume Enhancement</li>
                 </ul>
             </div>
-            <div class="service-box" >
+            <div class="service-box">
                 <img src="https://static-00.iconduck.com/assets.00/person-icon-476x512-hr6biidg.png" alt="Volunteer"
                     id="imgVolunteer">
                 <h6>Volunteer</h6>
@@ -111,50 +115,36 @@
 
     <section id="About">
         <div class="about">
-        <div class="about-us">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dolor id eros sagittis, vel
-                cursus leo fermentum. Nulla facilisi. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
-                ullamcorper
-                velit, nec aliquam nisl nunc vitae nunc. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
-                ullamcorper velit, nec aliquam nisl nunc vitae nunc.</p>
-        </div>
-        
-        <div class="about-us">
-            <h2>Our Mission</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dolor id eros sagittis, vel
-                cursus leo fermentum. Nulla facilisi. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
-                ullamcorper
-                velit, nec aliquam nisl nunc vitae nunc. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
-                ullamcorper velit, nec aliquam nisl nunc vitae nunc.</p>
-        
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dolor id eros sagittis, vel
+                    cursus leo fermentum. Nulla facilisi. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
+                    ullamcorper
+                    velit, nec aliquam nisl nunc vitae nunc. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
+                    ullamcorper velit, nec aliquam nisl nunc vitae nunc.</p>
+            </div>
+
+            <div class="about-us">
+                <h2>Our Mission</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dolor id eros sagittis, vel
+                    cursus leo fermentum. Nulla facilisi. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
+                    ullamcorper
+                    velit, nec aliquam nisl nunc vitae nunc. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
+                    ullamcorper velit, nec aliquam nisl nunc vitae nunc.</p>
+
     </section>
 
     <section id="form">
-        <div class="form">
-            <h2>Join Us</h2>
-            <form action="https://formspree.io/f/moqgqjvw" method="POST">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="text" name="surname" placeholder="Surname" required>
-                <input type="text" name="email" placeholder="Email" required>
-                <input type="text" name="phone" placeholder="Phone" required>
-                <input type="text" name="address" placeholder="Address" required>
-                <input type="text" name="city" placeholder="City" required>
-                <input type="text" name="state" placeholder="State" required>
-                <input type="text" name="zip" placeholder="Zip" required>
-                <input type="text" name="country" placeholder="Country" required>
-                <button class="submit-button" type="submit">Send</button>
-            </form>
-        </div>
+        <iframe src="form.html" style="width:100%; height:300px; border: none;"></iframe>
         <div class="counter-container">
             <div class="counter" id="volunteerCounter">0</div>
             <p>Volunteers has joined our organization today</p>
         </div>
     </section>
-    
+
+
     <script src="script.js"></script>
-    
-   
+
 
 </body>
 

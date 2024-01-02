@@ -26,7 +26,7 @@ body {
   
   nav {
     background-color: #3b3450; 
-    border-top: 3px solid var(--highlight-color);
+    /* border-top: 3px solid var(--highlight-color); */
     color: #ffffff; 
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ body {
   }
   
   .logo img {
-    max-width: 100%; /* Establece un ancho máximo */
+    
     height: auto;
     position: relative;
     border-radius: 50%;
@@ -197,14 +197,7 @@ h6 {
     font-weight: bold;
     color: #333;
 }
-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    margin: 0;
-    padding: 0;
-    width: 400px;
-}
+
 
 input{
     width: 200px;
@@ -214,6 +207,8 @@ input{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
    
     margin: 0;
     padding: 0;
@@ -257,4 +252,93 @@ button:hover {
 }
 img{
   border-radius: 10%;
+}
+
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+
+}
+
+/* Style the hamburger button */
+#navToggleBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+#navToggleBtn .hamburger {
+  width: 2rem;
+  height: 0.25rem;
+  background: #333;
+  color: white;
+}
+
+#navToggleBtn .hamburger:hover {
+  color: var(--highlight-color);
+    transition: color 0.3s ease;
+}
+
+/* Hide the navigation items by default */
+#navUl {
+  display: none;
+  flex-direction: column;
+}
+
+/* Show the navigation items on large screens */
+@media (min-width: 600px) {
+  #navUl {
+      display: flex;
+      flex-direction: row;
+  }
+  #navToggleBtn {
+      display: none;
+  }
+  
+}
+
+/* Show the hamburger menu on small screens */
+@media (max-width: 600px) {
+  #navToggleBtn {
+      display: flex;
+      
+  }
+  .containerService{
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  #form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cards{
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
 }
