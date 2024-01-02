@@ -12,12 +12,8 @@ window.onload = function() {
 }
 
 // switch to dark theme
-
-function toggleTheme() {
+function toggleTheme(event) {
+    console.log('Toggle Theme Function Executed');
     document.body.classList.toggle('theme-dark');
-  }
-  
-  // Obtener el interruptor de tema y agregar un evento de clic
-  const themeSwitch = document.getElementById('themeSwitch');
-  themeSwitch.addEventListener('click', toggleTheme);
-  
+    event.preventDefault();  // Evitar comportamiento predeterminado del botón
+}
