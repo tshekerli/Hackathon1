@@ -9,15 +9,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>Volunteer hub</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Unity Volunteer</title>
 </head>
 
 <body>
     <nav>
+        <button class="nav-toggle" id="navToggleBtn" aria-label="toggle navigation">
+            <span class="hamburger"> Menu</span>
+        </button>
         <div class="logo">
             <img src="https://media.istockphoto.com/id/1162212464/vector/human-palm-heart-inside-logo-design-vector-donate-symbol-illustration.jpg?s=612x612&w=0&k=20&c=V3Box3MPJcv8CDEuwmARkx9SEI7hU6xJeL5OlKhWjIk="
-                alt="logo" width="50px" height=50px>
+                alt="logo" width="50px" height='50px'>
         </div>
         <ul id="navUl">
             <li id="navLi"><a href="#container-1">Home</a></li>
@@ -25,23 +28,22 @@
             <li id="navLi"><a href="#training">Training</a></li>
             <li id="navLi"><a href="#About">About Us</a></li>
         </ul>
+        <button id="themeSwitch" onclick="toggleTheme(event)">Switch</button>
     </nav>
-        <button id="themeSwitch" onclick="toggleTheme(event)">Switch Theme</button>
     <header id="container-1">
-        <div class="container" >
+        <div class="container">
             <img src="https://img.freepik.com/vector-premium/concepto-gente-usa-aparatos-escena-gente-estilo-dibujos-animados-planos-chica-resuelve-preguntas-importantes-ayuda-telefono-inteligente-mientras-sienta-sofa-ilustracion-vectorial_198565-2278.jpg?w=740"
-                alt="Imagen">
+                alt="Unity Volunteers Image">
             <div class="content">
-                <h2>Tu Título Aquí</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dolor id eros sagittis, vel
-                    cursus leo fermentum.</p>
-                <button id="headerButton">Button</button>
+                <h2>Unity Volunteers</h2>
+                <p>Empowering communities through collective action and volunteerism.</p>
+                <button id="headerButton"> <a href="#form">Join Us</a></button>
             </div>
         </div>
     </header>
     <!-- my idea is to make some benefits, we can work on it -->
     <section id="services">
-        <div class="containerService" >
+        <div class="containerService">
             <div class="service-box">
                 <img src="https://static.thenounproject.com/png/3055860-200.png" alt="Volunteering Opportunities"
                     id="imgVolunteering">
@@ -54,7 +56,7 @@
                     <li>Resume Enhancement</li>
                 </ul>
             </div>
-            <div class="service-box" >
+            <div class="service-box">
                 <img src="https://static-00.iconduck.com/assets.00/person-icon-476x512-hr6biidg.png" alt="Volunteer"
                     id="imgVolunteer">
                 <h6>Volunteer</h6>
@@ -68,9 +70,11 @@
             </div>
         </div>
     </section>
-    <!-- the idea is to make cards with differents training sesions that we have -->
+    <!-- the idea is to make cards with different training sessions that we have -->
     <section id="training">
+        <h2>Courses for free</h2>
         <div class="cards">
+            <!-- Sample Training Card, you can customize these for your actual training sessions -->
             <div class="training-card">
                 <div class="title">Gardening Basics</div>
                 <div class="subtitle">3 weeks</div>
@@ -79,80 +83,98 @@
                     sustainable practices.</div>
             </div>
             <div class="training-card">
-                <div class="title">Gardening Basics</div>
-                <div class="subtitle">3 weeks</div>
-                <div class="description">Learn the fundamentals of gardening, including soil preparation, plant care,
-                    and
-                    sustainable practices.</div>
+                <div class="title">Community Outreach</div>
+                <div class="subtitle">4 weeks</div>
+                <div class="description">Engage with the community and develop skills for effective outreach and
+                    communication.</div>
             </div>
+
             <div class="training-card">
-                <div class="title">Gardening Basics</div>
-                <div class="subtitle">3 weeks</div>
-                <div class="description">Learn the fundamentals of gardening, including soil preparation, plant care,
-                    and
-                    sustainable practices.</div>
+                <div class="title">Coding for Beginners</div>
+                <div class="subtitle">6 weeks</div>
+                <div class="description">Start your coding journey with a comprehensive course covering basic
+                    programming concepts and languages.</div>
             </div>
+
             <div class="training-card">
-                <div class="title">Gardening Basics</div>
-                <div class="subtitle">3 weeks</div>
-                <div class="description">Learn the fundamentals of gardening, including soil preparation, plant care,
-                    and
-                    sustainable practices.</div>
+                <div class="title">Environmental Sustainability</div>
+                <div class="subtitle">5 weeks</div>
+                <div class="description">Explore sustainable practices and initiatives to contribute to a greener
+                    environment.</div>
             </div>
+
             <div class="training-card">
-                <div class="title">Gardening Basics</div>
-                <div class="subtitle">3 weeks</div>
-                <div class="description">Learn the fundamentals of gardening, including soil preparation, plant care,
-                    and
-                    sustainable practices.</div>
+                <div class="title">Health and Wellness</div>
+                <div class="subtitle">4 weeks</div>
+                <div class="description">Promote personal and community well-being through workshops on health and
+                    lifestyle.</div>
+            </div>
+
+            <div class="training-card">
+                <div class="title">Digital Marketing Strategies</div>
+                <div class="subtitle">8 weeks</div>
+                <div class="description">Learn effective digital marketing strategies to enhance the online presence of
+                    organizations.</div>
+            </div>
+
+            <div class="training-card">
+                <div class="title">Art and Creativity</div>
+                <div class="subtitle">4 weeks</div>
+                <div class="description">Unleash your creativity through art workshops covering various mediums and
+                    techniques.</div>
+            </div>
+
+            <div class="training-card">
+                <div class="title">Public Speaking Mastery</div>
+                <div class="subtitle">6 weeks</div>
+                <div class="description">Develop effective public speaking skills and boost your confidence in
+                    communication.</div>
+            </div>
+
+            <div class="training-card">
+                <div class="title">Financial Literacy</div>
+                <div class="subtitle">5 weeks</div>
+                <div class="description">Understand the essentials of financial management, budgeting, and investment
+                    strategies.</div>
             </div>
         </div>
     </section>
 
     <section id="About">
         <div class="about">
-        <div class="about-us">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dolor id eros sagittis, vel
-                cursus leo fermentum. Nulla facilisi. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
-                ullamcorper
-                velit, nec aliquam nisl nunc vitae nunc. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
-                ullamcorper velit, nec aliquam nisl nunc vitae nunc.</p>
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Unity Volunteers is a community-driven organization dedicated to making a positive impact through
+                    volunteerism. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dolor id
+                    eros
+                    sagittis, vel cursus leo fermentum. Nulla facilisi.</p>
+            </div>
+
+            <div class="about-us">
+                <h2>Our Mission</h2>
+                <p>Our mission is to create a united and empowered community through volunteer efforts. Lorem ipsum
+                    dolor
+                    sit amet, consectetur adipiscing elit. Quisque dapibus dolor id eros sagittis, vel cursus leo
+                    fermentum. Nulla facilisi.</p>
+            </div>
         </div>
-        
-        <div class="about-us">
-            <h2>Our Mission</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus dolor id eros sagittis, vel
-                cursus leo fermentum. Nulla facilisi. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
-                ullamcorper
-                velit, nec aliquam nisl nunc vitae nunc. Donec euismod, nisl vitae aliquam ultricies, nunc nunc
-                ullamcorper velit, nec aliquam nisl nunc vitae nunc.</p>
-        
     </section>
 
     <section id="form">
-        <div class="form">
-            <h2>Join Us</h2>
-            <form action="https://formspree.io/f/moqgqjvw" method="POST">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="text" name="surname" placeholder="Surname" required>
-                <input type="text" name="email" placeholder="Email" required>
-                <input type="text" name="phone" placeholder="Phone" required>
-                <input type="text" name="address" placeholder="Address" required>
-                <input type="text" name="city" placeholder="City" required>
-                <input type="text" name="state" placeholder="State" required>
-                <input type="text" name="zip" placeholder="Zip" required>
-                <input type="text" name="country" placeholder="Country" required>
-                <button class="submit-button" type="submit">Send</button>
-            </form>
-        </div>
+        <iframe src="form.html" style="width:100%; height:300px; border: none;"></iframe>
         <div class="counter-container">
             <div class="counter" id="volunteerCounter">0</div>
-            <p>Volunteers has joined our organization today</p>
+            <p>Volunteers have joined our organization today</p>
         </div>
     </section>
-    
+    <footer>
+    <i>Webpage made by Boris & Tural</i>
+    <i>for the 1st Hackaton JS 2024</i>
+    <a href="#navUl">Go to top</a></footer>
     <script src="script.js"></script>
+    
+   
+
 </body>
 
 </html>

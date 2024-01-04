@@ -32,8 +32,8 @@ body {
 }
 
 #themeSwitch {
-  position: fixed;
-  top: 10%;
+  position: absolute;
+  top: 15%;
   left: 10px;
   cursor: pointer;
   z-index: 999;
@@ -198,34 +198,55 @@ h6 {
 .service-box ul li {
   margin: 3%;
 }
+section h2{
+  text-align: center;
+}
+.training-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 
 .training-card {
-  width: 300px;
-  padding: 20px;
-  margin: 20px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(33.333% - 20px);
+  box-sizing: border-box;
+  text-align: left;
+  border: 1px solid #ccc;
   border-radius: 8px;
+  margin: 0 10px 20px 10px;
+  padding: 15px;
+  transition: transform 2s ease;
+  cursor: pointer;
+}
+
+.training-card:hover {
+  transform: scale(1.05); /* Aumentar tamaño en hover para dar efecto visual */
+  transition-duration: 2s;
+  background-color: var(--button-text-color-light);
+
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 18px;
   font-weight: bold;
-  color: #333;
 }
 
-.subtitle {
-  font-size: 0.9em;
-  font-weight: bold;
-  color: #777;
-  margin-top: 5px;
-}
-
+.subtitle,
 .description {
-  margin-top: 10px;
-  color: #555;
+  display: none; /* Inicialmente ocultar el subtítulo y la descripción */
 }
 
+.training-card:hover .subtitle,
+.training-card:hover .description {
+  display: block; /* Mostrar subtítulo y descripción en hover */
+}
 .counter-container {
   text-align: center;
   margin-top: 5%;
@@ -255,6 +276,8 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -295,6 +318,101 @@ button:hover {
 
 img {
   border-radius: 10%;
+}
+
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+
+}
+
+/* Style the hamburger button */
+#navToggleBtn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+#navToggleBtn .hamburger {
+  width: 2rem;
+  height: 0.25rem;
+  background: #333;
+  color: white;
+}
+
+#navToggleBtn .hamburger:hover {
+  color: var(--highlight-color);
+    transition: color 0.3s ease;
+}
+
+/* Hide the navigation items by default */
+#navUl {
+  display: none;
+  flex-direction: column;
+}
+#form{
+  margin: 5%;
+}
+footer{
+  text-align: center;
+  margin-bottom: 5%;
+}
+/* Show the navigation items on large screens */
+@media (min-width: 600px) {
+  #navUl {
+      display: flex;
+      flex-direction: row;
+  }
+  #navToggleBtn {
+      display: none;
+  }
+  
+}
+
+/* Show the hamburger menu on small screens */
+@media (max-width: 600px) {
+  #navToggleBtn {
+      display: flex;
+      
+  }
+  .containerService{
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+
+  #form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cards{
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
 }
 /*darktheme*/
 .theme-dark body {
@@ -341,4 +459,8 @@ img {
 
 .theme-dark #serviceUl li {
   color: var(--paragraph-color-dark);
+}
+
+.theme-dark #training{
+  color: var(--background-color-dark);
 }

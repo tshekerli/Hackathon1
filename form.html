@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: #8c93ab;
+
+
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        form > input {
+height: 20px;
+}
+
+        button {
+            color: #8c93ab;
+            background-color: #7d6d9c;
+            border: none;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+        }
+
+        button:hover {
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            form {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form">
+        <h2>Join Us</h2>
+        <form class="actual-form" action="https://formspree.io/f/moqgqjvw" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="state" placeholder="State" required>
+            <input type="text" name="zip" placeholder="Zip" required>
+            <input type="text" name="country" placeholder="Country" required>
+            <button class="submit-button" type="submit">Send</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
