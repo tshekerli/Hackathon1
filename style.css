@@ -21,7 +21,9 @@
   --secondary-color-dark: #32414b;
   --tertiary-color-dark: #d5ebf7;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
